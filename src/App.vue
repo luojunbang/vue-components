@@ -4,7 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -15,6 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 100%;
 }
 
 #nav {
@@ -28,5 +29,13 @@
       color: #42b983;
     }
   }
+}
+.height100{
+  height: 100%;
+}
+.flexrow{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 </style>

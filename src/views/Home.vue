@@ -1,18 +1,30 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <ComponentBox>
+      <div class="flexrow height100">
+        <VerificationCode />
+      </div>
+    </ComponentBox>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import ComponentBox from '@/components/ComponentBox';
+import VerificationCode from '@/components/VerificationCode/VerificationCode.vue';
 export default {
   name: 'Home',
   components: {
-    HelloWorld
-  }
-}
+    ComponentBox,
+    VerificationCode
+  },
+};
 </script>
+
+<style lang="scss" scoped>
+.container {
+  background-color: #efefef;
+  width: 100%;
+  padding: 30px;
+}
+</style>
